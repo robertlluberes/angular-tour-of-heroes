@@ -1,3 +1,5 @@
+import { InMemoryDataService } from './in-memory-data.service';
+import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from "@angular/forms";
@@ -22,7 +24,9 @@ import { DashboardComponent } from './dashboard/dashboard.component';
     BrowserModule,
     FormsModule,
     AppRoutingModule,
-    HttpClient
+    HttpClient,
+    HttpClientInMemoryWebApiModule,
+    InMemoryDataService
   ],
   providers: [],
   bootstrap: [AppComponent]
